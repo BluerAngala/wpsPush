@@ -32,6 +32,18 @@
 3. 配置CONFIG表和PUSH表
 4. 使用案例参考TEMPLATE.js脚本
 
+## ⭐ 图片教程步骤
+1. 复制UPDATE.js和PUSH.js到金山文档中。运行UPDATE脚本即可生成配置表格，给PUSH脚本添加网络API和邮箱API。  
+![UPDATE脚本](https://s3.bmp.ovh/imgs/2024/07/16/b4d980655d4168f6.png)  
+![PUSH脚本](https://s3.bmp.ovh/imgs/2024/07/16/36aa5198fb951403.png)  
+![CONFIG表](https://s3.bmp.ovh/imgs/2024/07/16/a6ffc1e2c2ae10d9.png)  
+2. PUSH表中“是否推送”选择“是”，CONFIG表中“推送方式”为“@all”会只推送填是的这几个  
+![PUSH表](https://s3.bmp.ovh/imgs/2024/07/16/99e82f4b3e32f486.png)  
+3. 将PUSH加入定时任务，到时间就会自动推送  
+![定时任务](https://s3.bmp.ovh/imgs/2024/07/16/875218c387ce1dc0.png)  
+4. 如何写入要推送的消息，参考TEMPLATE.js使用案例脚本即可  
+![案例](https://s3.bmp.ovh/imgs/2024/07/16/3d164eeddd09d30b.png)  
+
 ## 🚀 推送逻辑流程
 参考TEMPLATE.js使用案例脚本，将推送相关的代码复制到你的脚本中。  
 当你的脚本调用writeMessage函数时，此函数会将消息写入CONFIG表中。  
