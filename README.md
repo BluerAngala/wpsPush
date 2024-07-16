@@ -38,20 +38,20 @@
 等到PUSH定时任务执行时，会自动检索CONFIG表中的消息，并进行推送。  
 
 ## 🧾 表格配置含义
-** 任务的名称 **  
+**任务的名称**  
 writeMessage函数需要两个参数，taskName（任务名）和（message）消息  
 此CONFIG表中的任务名称即为writeMessage需要的任务名称  
 例如：CONFIG表中任务名称为“默山推送”  
 那么使用时：writeMessage("待推送消息", "默山推送")   
   
-** 推送方式：**  
+**推送方式：**  
 @all方式代表在PUSH表内的消息推送平台都推送（bark、pushplus、钉钉等等）  
 bark方式代表，仅用推送bark  
 dingtalk方式代表，仅用推送钉钉  
 bark&pushplus方式，同时推送bark和pushplus。用&连接  
 bark&email&pushplus方式，同时推送bark、email和pushplus。  
   
-** 加入消息池： **  
+**加入消息池：**  
 这个的意思是“加入消息池”选项勾选“是”的就会合并为一条消息进行通知，以@all方式推送。例如你运行了8个签到任务，那么在某个时刻只收到1条通知消息。  
 默认为“否”，代表每个签到结果都用独立的一条消息通知。例如你运行了8个签到任务，那么在某个时刻会同时收到8条通知消息。  
 
