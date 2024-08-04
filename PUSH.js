@@ -9,7 +9,7 @@
           记得加入“网络API”和“邮箱API”
     推送：bark、pushplus、Server酱（ServerChan）、邮箱（email）
           钉钉（dingtalk）、discord、企业微信（qywx）、息知（xizhi）
-          即时达（jishida）
+          即时达（jishida）、wxpusher
 */
 
 let sheetNameConfig = "CONFIG"; // 总配置表
@@ -33,6 +33,7 @@ var jsonPush = [
   { name: "qywx", key: "xxxxxx", flag: "0" },
   { name: "xizhi", key: "xxxxxx", flag: "0" },
   { name: "jishida", key: "xxxxxx", flag: "0" },
+  { name: "wxpusher", key: "xxxxxx", flag: "0" },
 ]; // 推送数据，flag=1则推送
 var jsonEmail = {
   server: "",
@@ -319,6 +320,8 @@ function pushUnit(message, key, name){
       xizhi(message, key);
     }else if (name == "jishida" || name == "即时达"){
       jishida(message, key);
+    }else if (name == "wxpusher" || name == "WxPusher"){
+      wxpusher(message, key);
     }
   }catch{
     console.log("📢 存在推送失败：" + name)
@@ -516,4 +519,24 @@ function jishida(message, key) {
     method: "get",
   });
   sleep(5000);
+}
+
+// wxpusher
+function wxpusher(message, key) {
+  message = encodeURIComponent(message)
+  let keyarry= key.split("|") // 使用|作为分隔符
+  let appToken = keyarry[0]
+  let uid = keyarry[1]
+  let url = ""
+  if(isHttpOrHttpsUrl(key)){  // 以http开头
+    url = key + "&verifyPayType=0&content=" + message 
+  }else{
+    
+    url = "https://wxpusher.zjiecode.com/api/send/message/?appToken=" + appToken + "&uid=" + uid + "&verifyPayType=0&content=" + message 
+  }
+  let resp = HTTP.fetch(url, {
+    method: "get",
+  });
+  // console.log(resp.json())
+  // sleep(5000);
 }

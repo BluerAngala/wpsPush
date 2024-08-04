@@ -43,6 +43,7 @@ var pushContent = [
   ['qywx', 'xxxxxxxx', '否'],
   ['xizhi', 'xxxxxxxx', '否'],
   ['jishida', 'xxxxxxxx', '否'],
+  ['wxpusher', 'appToken|uid', '否'],
 ]
 
 // email表内容

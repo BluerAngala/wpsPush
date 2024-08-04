@@ -77,6 +77,7 @@ bark&email&pushplus方式，同时推送bark、email和pushplus。
 - 企业微信群机器人（企业微信）
 - 息知（微信）
 - 即时达（微信）
+- wxpusher（微信）
 
 
 ## 🤝 欢迎参与贡献
