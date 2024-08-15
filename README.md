@@ -26,6 +26,18 @@
 ## 🍨 教程说明
 💬 公众号“默库”
 
+## 💬 支持得通知列表
+- Bark（iOS）
+- pushplus（微信）
+- Server 酱（微信）
+- 邮箱
+- dingtalk（钉钉）
+- discord
+- 企业微信群机器人（企业微信）
+- 息知（微信）
+- 即时达（微信）
+- wxpusher（微信）
+
 ## 🛰️ 文字步骤
 1. 复制最新UPDATE.js脚本到金山文档，并运行
 2. 复制最新PUSH.js脚本到金山文档，添加网络API和邮箱API，并加入定时任务
@@ -67,26 +79,13 @@ bark&email&pushplus方式，同时推送bark、email和pushplus。
 这个的意思是“加入消息池”选项勾选“是”的就会合并为一条消息进行通知，以@all方式推送。例如你运行了8个签到任务，那么在某个时刻只收到1条通知消息。  
 默认为“否”，代表每个签到结果都用独立的一条消息通知。例如你运行了8个签到任务，那么在某个时刻会同时收到8条通知消息。  
 
-## 💬 通知列表
-- Bark（iOS）
-- pushplus（微信）
-- Server 酱（微信）
-- 邮箱
-- dingtalk（钉钉）
-- discord
-- 企业微信群机器人（企业微信）
-- 息知（微信）
-- 即时达（微信）
-- wxpusher（微信）
-
-
 ## 🤝 欢迎参与贡献
 欢迎各种形式的贡献
 
 [![][pr-welcome-shield]][pr-welcome-link]
 
-### 💗 感谢我们的贡献者
-[![][github-contrib-shield]][github-contrib-link]
+<!-- ### 💗 感谢我们的贡献者
+[![][github-contrib-shield]][github-contrib-link] -->
 
 
 ## ✨ Star 数
@@ -94,10 +93,12 @@ bark&email&pushplus方式，同时推送bark、email和pushplus。
 [![][starchart-shield]][starchart-link]
 
 ## 📝 更新日志 
+- 2024-08-04
+    * 增加wxpusher推送
 - 2024-07-16
     * 推出金山文档多渠道消息推送器
 
-## 📌 特别声明
+<!-- ## 📌 特别声明
 
 - 本仓库发布的脚本仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断。
 
@@ -113,7 +114,7 @@ bark&email&pushplus方式，同时推送bark、email和pushplus。
 
 **您必须在下载后的24小时内从计算机或手机中完全删除以上内容**
 
-> ***您使用或者复制了本仓库且本人制作的任何脚本，则视为 `已接受` 此声明，请仔细阅读***
+> ***您使用或者复制了本仓库且本人制作的任何脚本，则视为 `已接受` 此声明，请仔细阅读*** -->
 
 <!-- LINK GROUP -->
 [github-codespace-link]: https://codespaces.new/imoki/wpsPush
