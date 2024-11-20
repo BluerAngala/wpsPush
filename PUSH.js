@@ -5,6 +5,7 @@
     更新时间：20241120
     脚本：PUSH.js 推送脚本
     说明：此脚本为推送脚本。
+          脚本类型选择airscript 1.0
           将PUSH加入定时任务即可定时进行推送
           记得加入“网络API”和“邮箱API”
     推送：bark、pushplus、Server酱（ServerChan）、邮箱（email）
