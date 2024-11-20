@@ -24,7 +24,7 @@
     - 💽 使用简单
 
 ## 🍨 教程说明
-💬 公众号“默库”
+💬 公众号“**默库**”
 
 ## 💬 支持得通知列表
 - Bark（iOS）
@@ -39,8 +39,8 @@
 - wxpusher（微信）
 
 ## 🛰️ 文字步骤
-1. 复制最新UPDATE.js脚本到金山文档，并运行
-2. 复制最新PUSH.js脚本到金山文档，添加网络API和邮箱API，并加入定时任务
+1. 复制最新UPDATE.js脚本到金山文档（脚本类型：airscript 1.0），并运行
+2. 复制最新PUSH.js脚本到金山文档（脚本类型：airscript 1.0），添加网络API和邮箱API，并加入定时任务
 3. 配置CONFIG表和PUSH表
 4. 使用案例参考TEMPLATE.js脚本
 
@@ -58,7 +58,7 @@
 
 ## 🚀 推送逻辑流程
 参考TEMPLATE.js使用案例脚本，将推送相关的代码复制到你的脚本中。  
-当你的脚本调用writeMessage函数时，此函数会将消息写入CONFIG表中。  
+当你的脚本调用**writeMessage**函数时，此函数会将消息写入CONFIG表中。  
 等到PUSH定时任务执行时，会自动检索CONFIG表中的消息，并进行推送。  
 
 ## 🧾 表格配置含义
@@ -93,6 +93,10 @@ bark&email&pushplus方式，同时推送bark、email和pushplus。
 [![][starchart-shield]][starchart-link]
 
 ## 📝 更新日志 
+- 2024-11-20
+    * 增加wxpusher极简推送模式
+    * 修复wxpusher不换行问题
+    * 修复server酱不换行问题
 - 2024-08-04
     * 增加wxpusher推送
 - 2024-07-16
