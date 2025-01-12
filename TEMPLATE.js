@@ -14,13 +14,14 @@
 */
 
 
+
 // 使用：
 // 只需要向填写两个参数即可，taskName（任务名）和（message）消息
 // 之后运行PUSH脚本就会自动进行推送了
-var version = 1 // 版本类型，自动识别并适配。默认为airscript 1.0，否则为2.0（Beta）
 let taskName = "推送任务1"  // 填CONFIG表的任务名，代表向CONFIG表中的次任务写入
 let message = "这是一条消息"  // 填写待推送的消息
 writeMessage(message, taskName)  // 将消息写入CONFIG表中
+
 
 
 // 将如下内容复制到你的脚本中即可调用
@@ -32,7 +33,7 @@ function getDate(){
   return currentDate
 }
 
-// airscript检测版本
+// airscript检测版本， 版本类型，自动识别并适配。默认为airscript 1.0，否则为2.0（Beta）
 function checkVesion(){
   try{
     let temp = Application.Range("A1").Text;
