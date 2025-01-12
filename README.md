@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://socialify.git.ci/imoki/wpsPush/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark">
-<h1>默山推送器</h1>
+<h1>金山推送器</h1>
 基于「金山文档」的金山文档多渠道消息推送器
 
 <div id="shield">
@@ -14,17 +14,20 @@
 </div>
 </div>
 
+## 🍻 交流渠道
+B站：无盐七  
+QQ群：963592267  
+公众号：默库  
+  
 ## 🎊 简介
 此脚本用于金山文档的消息推送，功能丰富，使用简单，推送类型繁多  
 
 ## ✨ 特性
     - 📀 支持金山文档运行
-    - 💿 自动生成配置表格
-    - ♾️ 多种推送方式
-    - 💽 使用简单
-
-## 🍨 教程说明
-💬 公众号“**默库**”
+    - 💿 智能识别脚本类型、自动生成配置表格
+    - ♾️ 多种推送方式、优先级推送、智能排版
+    - 💽 使用简单、适配性强
+    - 🔥 兼容airscript 1.0和airscript 2.0(Beta)
 
 ## 💬 支持得通知列表
 - Bark（iOS）
@@ -93,6 +96,10 @@ bark&email&pushplus方式，同时推送bark、email和pushplus。
 [![][starchart-shield]][starchart-link]
 
 ## 📝 更新日志 
+- 2025-01-12
+    * 脚本类型同时兼容airscript 1.0和2.0版本
+    * 推送脚本多功能更新
+    * UPDATE.js脚本部分代码优化
 - 2024-11-20
     * 增加wxpusher极简推送模式
     * 修复wxpusher不换行问题
