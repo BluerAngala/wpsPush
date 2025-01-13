@@ -42,8 +42,8 @@ QQ群：963592267
 - wxpusher（微信）
 
 ## 📺️ 视频教程
-[![](https://img.shields.io/badge/金山推送器-无盐七-blue)](https://www.bilibili.com/video/BV1bXckehEdn)
-
+[![](https://img.shields.io/badge/金山推送器-无盐七-blue)](https://www.bilibili.com/video/BV1bXckehEdn) https://www.bilibili.com/video/BV1bXckehEdn/
+  
 ## 🛰️ 文字步骤
 1. 复制最新UPDATE.js脚本到金山文档（脚本类型：airscript 1.0），并运行
 2. 复制最新PUSH.js脚本到金山文档（脚本类型：airscript 1.0），添加网络API和邮箱API，并加入定时任务
